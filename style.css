@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    
+}
+.main-container h2{
+    text-align: center;
+    color: rgb(234, 23, 23);
+    margin-top: 20px;
+    font-size: 30px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+.main-container{
+    position: relative;
+    height: 100vh;
+    width: 100wh;
+}
+
+.main-container::before{
+    content:"";
+    background-image: url("https://images.unsplash.com/photo-1521575107034-e0fa0b594529?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1168&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+table, tbody, thead, th , tr, td{
+    border-collapse: collapse;
+    padding: 15px 10px;
+    text-align: center;
+}
+tbody, tr{
+    border-bottom: 1px solid rgba(34, 12, 12, 0.881);
+}
+thead{
+    color: red;
+    font-size: 20px;
+}
+
+table{
+    width: 90vw;
+}
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.searchBar input{
+    padding: 10px;
+    border-radius: 4px;
+    width:10vw;
+    border: none;
+    outline: none;
+}
+
+.searchBar Button{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(213, 39, 39);
+    color: white;
+    font-weight: 600;
+    border:none;
+    cursor: pointer;
+}
